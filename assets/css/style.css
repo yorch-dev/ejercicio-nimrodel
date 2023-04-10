@@ -1,0 +1,55 @@
+.navbar {
+    background-image: url("../img/fondo.jpg");
+    background-repeat: repeat-x;
+    background-size: auto 15rem;
+
+}
+
+.navbar img {
+    height: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-decoration: overline;
+}
+
+.menu article img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.modal img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+body {
+    overflow-y: auto !important;
+}
+
+#carrusel img {
+    height: 30rem;
+}
+
+footer {
+    background-color: #020202;
+    height: 12rem;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 35rem;
+    background-position: center top;
+    background-position-x: auto;
+}
+
+/* Pantalla small (>= 576px) */
+@media (max-width:767px) {
+    footer {
+        background-image: none;
+    }
+}
