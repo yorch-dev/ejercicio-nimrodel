@@ -14,6 +14,18 @@ $(document).ready(function () {
         $(".modal").modal("show");
     })
 
+    $("#btn-sobre-nosotros").click( (e) => {
+        e.preventDefault()
+        let carrusel = $("#carrusel-modal").html()
+        let title = "Nimrodel Pub Restaurant"
+        let paragraph = 'Nimrodel significa "dama de la cueva blanca". Fue una elfa silvana que vivió durante la Tercera Edad del Sol en el bosque de Lothórien. En honor a su nombre, se acuña Nimrodel al río que nace en las  Montañas Nubladas'
+
+        $modalText.empty().append(`<h3>${title}</h3>`);
+        $modalText.append(`<p class="mb-0">${paragraph}</p>`);
+        $modalBody.html(`${carrusel}`);
+        $(".modal").modal("show");
+    })
+
     $("#btn-comuniquemonos").click( () => {
         $("#comuniquemonos").attr("class", "d-block")
     })
